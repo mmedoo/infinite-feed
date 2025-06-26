@@ -59,7 +59,7 @@ function App() {
 			<br />
 			<br />
 
-			<img width={50} src="/spinner-2.svg" alt="spinner" />
+			<img width={50} src="spinner-2.svg" alt="spinner" />
 			
 			<br />
 			<br />

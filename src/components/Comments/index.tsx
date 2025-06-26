@@ -49,7 +49,7 @@ const Comments = memo(({ post }: { post: PostData }) => {
 						<br />
 						<br />
 						
-						<img src="/spinner-2.svg" alt="spinner" />
+						<img src="spinner-2.svg" alt="spinner" />
 
 						<br />
 						<br />
