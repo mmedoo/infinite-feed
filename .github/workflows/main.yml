@@ -1,0 +1,14 @@
+name: Conditional Jobs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build and Publish React
+      uses: mmedoo/build-react-on-push@v1.3
