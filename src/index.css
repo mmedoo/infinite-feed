@@ -1,0 +1,74 @@
+html {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#layer {
+	inset: 0;
+	position: fixed;
+	background-color: rgba(100, 100, 100, 0.5);
+
+	& #close {
+		top: 10px;
+		right: 10px;
+		height: 40px;
+		display: grid;
+		color: black;
+		font-size: 32px;
+		cursor: pointer;
+		user-select: none;
+		position: absolute;
+		place-items: center;
+	}
+
+	& #layer-inner {
+		overflow: hidden;
+		position: absolute;
+		inset: 5% 15%;
+		border-radius: 18px;
+		background-color: white;
+		padding: 60px 20px 0px 20px;
+	}
+}
+
+#posts {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/* height: 100vh; */
+}
+
+#loader {
+	width: 24px;
+	aspect-ratio: 1;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	scale: 3;
+}
+
+.hoverable {
+	border-radius: 50%;
+	border: 1px solid #0000;
+	aspect-ratio: 1;
+
+	&:hover {
+		background-color: #f0f0f0;
+		border: 1px solid #ccc;
+	}
+
+	&:active {
+		background-color: #e0e0e0;
+		border: 1px solid #bbb;
+	}
+}
